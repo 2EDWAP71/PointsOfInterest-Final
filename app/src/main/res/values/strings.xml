@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PointsOfInterest</string>
+        <string name="addaninterest" >Add an interest</string>
+        <string name="Preferences">Preferences</string>
+        <string name="Save">Save to file</string>
+        <string name="Load">Load from file</string>
+        <string name="LoadWeb">Load Markers From Web</string>
+</resources>

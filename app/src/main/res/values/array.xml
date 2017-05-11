@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="web">
+        <item>Disable</item>
+        <item>Enable</item>
+
+    </string-array>
+    <string-array name="savedFile">
+        <item>NoSave</item>
+        <item>Save</item>
+    </string-array>
+</resources>

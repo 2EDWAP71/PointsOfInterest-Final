@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addaninterest" android:title="@string/addaninterest"/>
+    <item android:id="@+id/prefs" android:title="@string/Preferences"/>
+    <item android:id="@+id/loadWeb" android:title="@string/LoadWeb"/>
+
+</menu>

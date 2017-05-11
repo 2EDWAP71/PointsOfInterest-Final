@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListPreference android:key="File" android:title="Saved to file?"
+            android:summary="Choose whether you would like to upload the interest to the web." android:entries=
+            "@array/web" android:entryValues="@array/savedFile"/>
+    </PreferenceScreen>
