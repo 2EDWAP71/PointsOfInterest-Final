@@ -41,15 +41,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MapView mv;
     ItemizedIconOverlay<OverlayItem> items;
     ItemizedIconOverlay.OnItemGestureListener<OverlayItem> markerGestureListener;
-
+    public void onStart(){
+        super.onStart();
+        Configuration.getInstance().load(this,
+                PreferenceManager.getDefaultSharedPreferences(this));
+    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        Configuration.getInstance().load(this,
-                PreferenceManager.getDefaultSharedPreferences(this));
+
         setContentView(R.layout.activity_main);
         mv = (MapView) findViewById(R.id.map1);
         mv.getController().setCenter(new GeoPoint(50.90, -1.40));
@@ -277,6 +280,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     data[2], new GeoPoint(Double.parseDouble (data[4])
                                     ,Double.parseDouble(data[3])));
                             items.addItem(item);
+
 
                         }
                     }
